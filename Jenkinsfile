@@ -8,7 +8,7 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/jesusmendozahuillca/demo-counter-app.git'
             }
         }
-      stage('Unit Test){
+      stage('Unit Test'){
 
             steps{
                 sh 'mvn test'
