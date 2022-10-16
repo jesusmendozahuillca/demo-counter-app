@@ -30,7 +30,7 @@ pipeline {
         }    
        stage('Build docker image'){
             steps{
-                    sh 'docker build -t jmendoza4633/anime-corp-repository:Uber .' 
+                    sh 'docker build -t jmendoza4633/Uber .' 
             }
         }
         
