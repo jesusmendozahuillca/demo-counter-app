@@ -27,6 +27,12 @@ pipeline {
             steps{
                 sh 'mvn clean install'
             }
-        }        
+        }    
+       stage('Build docker image'){
+            steps{
+                    sh 'docker build -t jmendoza4633/anime-corp-repository:Uber .' 
+            }
+        }
+        
     }
 }
